@@ -1,4 +1,4 @@
-import { ErroValidacao } from './ErroValidacao';
+import { ErroValidacao } from '../model/ErroValidacao';
 
 export class Validador {
     private constructor(
@@ -44,7 +44,6 @@ export class Validador {
 
         const erro = {
             ...erroBase,
-            valor: this.valor,
             atributo: this.atributo ?? undefined,
             objeto: this.objeto ?? undefined
         }
